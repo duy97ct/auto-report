@@ -104,7 +104,7 @@ def main():
         driver.get(url_1cuank)
 
         # Đăng nhập vào hệ thống
-        login_id_nk = WebDriverWait(driver, 10).until(
+        login_id_nk = WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.ID, "_58_login")))
         login_id_nk.send_keys('admin_ninhkieu')
 
